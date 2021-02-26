@@ -1,0 +1,8 @@
+ENCODER_ENABLE = yes
+AUDIO_ENABLE = yes
+EXTRAKEY_ENABLE = yes
+
+VIA_ENABLE = yes
+LT0_ENABLE = yes
+
+EXTRAFLAGS += -flto
