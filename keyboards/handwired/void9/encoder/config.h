@@ -23,7 +23,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  * Modify to match your wiring
  *
- *                        1   2   3 
+ *                        1   2   3
  */
 #define MATRIX_ROW_PINS { F4, F5, F6 }
 #define MATRIX_COL_PINS { D1, D4, D0 }
@@ -33,8 +33,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DIODE_DIRECTION COL2ROW
 
 /* Encoder pins */
-#define ENCODERS_PAD_A { F7, B3 }
-#define ENCODERS_PAD_B { B1, B2 }
+#define ENCODERS_PAD_A { B1, B2 }
+#define ENCODERS_PAD_B { F7, B3 }
 
 /* Audio pin */
 // #define B6_AUDIO
