@@ -37,7 +37,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define ENCODERS_PAD_B { B1, B2 }
 
 /* Audio pin */
-#define B6_AUDIO
+// #define B6_AUDIO
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
 #define DEBOUNCE 5
@@ -49,6 +49,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #ifndef LINK_TIME_OPTIMIZATION_ENABLE
   #define NO_ACTION_MACRO
   #define NO_ACTION_FUNCTION
-  #define NO_ACTION_TAPPING
-  #define NO_ACTION_ONESHOT
 #endif
