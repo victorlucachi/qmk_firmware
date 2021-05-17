@@ -29,3 +29,12 @@ MIDI_ENABLE = no            # MIDI support
 BLUETOOTH_ENABLE = no       # Enable Bluetooth with the Adafruit EZ-Key HID
 AUDIO_ENABLE = no           # Audio output on port C6
 FAUXCLICKY_ENABLE = no      # Use buzzer to emulate clicky switches
+
+# Disable these Options for VIA support for now. Might be fixed in the future.  
+
+KEY_LOCK_ENABLE = no        # Key locking to prevent having to hold down a key for too long
+TERMINAL_ENABLE = no        # Command-like interface to communicate with the keyboard in a text editor
+												  
+# Enabled to reduce firmware size.
+
+LTO_ENABLE = yes 
