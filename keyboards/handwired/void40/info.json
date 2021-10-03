@@ -6,7 +6,7 @@
     "height": 4,
     "layouts": {
         "LAYOUT_planck_mit": {
-            "key_count": 47,
+//            "key_count": 47,
             "layout": [
                 {"x":0, "y":0},
                 {"x":1, "y":0},
@@ -58,7 +58,7 @@
             ]
         },
         "LAYOUT_ortho_4x12": {
-            "key_count": 48,
+//            "key_count": 48,
             "layout": [
                 {"x":0, "y":0},
                 {"x":1, "y":0},
@@ -107,7 +107,7 @@
                 {"x":8, "y":3},
                 {"x":9, "y":3},
                 {"x":10, "y":3},
-                {"x":11, "y":3} 
+                {"x":11, "y":3}
             ]
         }
     }

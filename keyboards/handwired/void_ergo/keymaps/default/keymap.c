@@ -34,7 +34,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
  * |KC_LSFT,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                         KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, KC_RSFT |
  * |--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
- *                         KC_NO, KC_NO, KC_LGUI,   LOWER,  KC_SPC|  |  KC_ENT,  RAISE,  KC_RALT, KC_NO, KC_NO 
+ *                         KC_NO, KC_NO, KC_LGUI,   LOWER,  KC_SPC|  |  KC_ENT,  RAISE,  KC_RALT, KC_NO, KC_NO
  *                                       |------------------------|  |--------------------------|
  */
 [_QWERTY] = LAYOUT_void_ergo(
@@ -74,76 +74,25 @@ layer_state_t layer_state_set_user(layer_state_t state) {
  * ROTARY ENCODER
  */
 
-static bool tabbing = false;
-static uint16_t tabtimer;
-#define TABBING_TIMER 750
-
-void encoder_update_user(uint8_t index, bool clockwise) {
-  if (index == 0) {
-    if (IS_LAYER_ON(_RAISE)) {
-      if (clockwise) {
-        tabtimer = timer_read();
-        if(!tabbing) {
-          register_code(KC_LALT);
-          tabbing = true;
-        }
-        tap_code(KC_TAB);
-      } else {
-        tabtimer = timer_read();
-        if(!tabbing) {
-          register_code(KC_LALT);
-          tabbing = true;
-        }
-
-        register_code(KC_LSFT);
-        tap_code(KC_TAB);
-        unregister_code(KC_LSFT);
-      }
-    } else {
-      if (clockwise) {
-        tap_code(KC_MPRV);
-      } else {
-        tap_code(KC_MNXT);
-      }
-    }
-  }
-  else if (index == 1) {
-    if (IS_LAYER_ON(_RAISE)) {
-      if (clockwise) {
-        tabtimer = timer_read();
-        if(!tabbing) {
-          register_code(KC_LALT);
-          tabbing = true;
-        }
-        tap_code(KC_TAB);
-      } else {
-        tabtimer = timer_read();
-        if(!tabbing) {
-          register_code(KC_LALT);
-          tabbing = true;
-        }
-
-        register_code(KC_LSFT);
-        tap_code(KC_TAB);
-        unregister_code(KC_LSFT);
-      }
-    } else {
-      if (clockwise) {
-        tap_code(KC_VOLU);
-      } else {
-        tap_code(KC_VOLD);
-      }
-    }
-  } 
+bool encoder_update_kb(uint8_t index, bool clockwise) {
+    return encoder_update_user(index, clockwise);
 }
 
-void matrix_scan_user(void) {
-  if(tabbing) {
-    if (timer_elapsed(tabtimer) > TABBING_TIMER) {
-      unregister_code(KC_LALT);
-      tabbing = false;
+bool encoder_update_user(uint8_t index, bool clockwise) {
+    if (index == 0) { /* First encoder */
+        if (clockwise) {
+            tap_code(KC_MNXT);
+        } else {
+            tap_code(KC_MPRV);
+        }
+    } else if (index == 1) { /* Second encoder */
+        if (clockwise) {
+            tap_code(KC_VOLU);
+        } else {
+            tap_code(KC_VOLD);
+        }
     }
-  }
+    return true;
 }
 
 void matrix_init_user(void) {
