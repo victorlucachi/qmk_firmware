@@ -1,6 +1,6 @@
 # VOID40
 
-![VOID40](https://i.imgur.com/H7uoMas.jpg)
+![VOID40](https://i.imgur.com/WZ8EVJY.jpg)
 
 A 3D printed, handwired, 40% ortholinear keyboard with (or without, to each their own) a rotary encoder. STL files, a bill of materials and more info can be found [here](https://github.com/victorlucachi/void40).
 
