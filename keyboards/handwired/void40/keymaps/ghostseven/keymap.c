@@ -106,7 +106,7 @@ static bool tabbing = false;
 static uint16_t tabtimer;
 #define TABBING_TIMER 750
 
-void encoder_update_user(uint8_t index, bool clockwise) {
+bool encoder_update_user(uint8_t index, bool clockwise) {
   if (index == 0) {
     if (IS_LAYER_ON(_RAISE)) {
       if (clockwise) {
@@ -135,6 +135,7 @@ void encoder_update_user(uint8_t index, bool clockwise) {
       }
     }
   }
+  return false;
 }
 
 void matrix_scan_user(void) {

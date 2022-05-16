@@ -1,1 +1,1 @@
-ENCODER_ENABLE = no		# Enable support for rotary encoders
+ENCODER_ENABLE = yes
