@@ -35,7 +35,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  * Modify to match your wiring
  *
- *                        1   2   3   4 
+ *                        1   2   3   4
  */
 #define MATRIX_ROW_PINS { D3, D2, D1, D0 }
 #define MATRIX_COL_PINS { E6, D7, C6, D4 }

@@ -90,21 +90,21 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ROTARY ENCODER
  */
 
-void encoder_update_user(uint8_t index, bool clockwise) {
-  if (index == 0) {
-      if (clockwise) {
-        tap_code(KC_MNXT);
-      } else {
-        tap_code(KC_MPRV);
-      }
-  }
-  else if (index == 1) {
-      if (clockwise) {
-        tap_code(KC_VOLU);
-      } else {
-        tap_code(KC_VOLD);
-      }
-  } 
+bool encoder_update_user(uint8_t index, bool clockwise) {
+    if (index == 0) { /* First encoder */
+        if (clockwise) {
+            tap_code(KC_MNXT);
+        } else {
+            tap_code(KC_MPRV);
+        }
+    } else if (index == 1) { /* Second encoder */
+        if (clockwise) {
+            tap_code(KC_VOLU);
+        } else {
+            tap_code(KC_VOLD);
+        }
+    }
+    return false;
 }
 
 void matrix_init_user(void) {

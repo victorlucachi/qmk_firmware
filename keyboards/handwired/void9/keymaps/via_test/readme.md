@@ -1,1 +1,1 @@
-# The via test keymap for void9
+# The default keymap for void9

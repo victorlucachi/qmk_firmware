@@ -31,15 +31,28 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MATRIX_ROWS 3
 #define MATRIX_COLS 3
 
+/* Keyboard Matrix Assignments
+ *
+ * Modify to match your wiring
+ *
+ *                        1   2   3
+ */
+#define MATRIX_ROW_PINS { F4, F5, F6 }
+#define MATRIX_COL_PINS { D1, D4, D0 }
+#define UNUSED_PINS
+
 /* COL2ROW, ROW2COL*/
 #define DIODE_DIRECTION COL2ROW
 
+/* Rotary Encoder Support */
+#define ENCODERS_PAD_A { B1, B2 }
+#define ENCODERS_PAD_B { F7, B3 }
+
+#define ENCODER_RESOLUTION 4
+#define TAP_CODE_DELAY 10
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
 #define DEBOUNCE 5
-
-/* Tap dance max time */
-#define TAPPING_TERM 200
 
 /* disable these deprecated features by default */
 #ifndef LINK_TIME_OPTIMIZATION_ENABLE
