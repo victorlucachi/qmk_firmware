@@ -2,7 +2,7 @@
 
 ![VOID16](https://i.imgur.com/ExFBLPU.jpg)
 
-A handwired 4x4 macropad with a rotary encoder.
+A handwired 4x4 macropad with (or without, it's up to you) a rotary encoder.
 
 * Keyboard Maintainer: [Victor Lucachi](https://github.com/victorlucachi)
 * Hardware Supported: Pro Micro
