@@ -24,7 +24,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define PRODUCT_ID 0x3535
 #define DEVICE_VER 0x0001
 #define MANUFACTURER Victor Lucachi
-#define DESCRIPTION A handwired split keyboard inspired by the Corne
+//#define DESCRIPTION A handwired split keyboard inspired by the Corne
 
 /* key matrix size */
 #define MATRIX_ROWS 8
@@ -37,5 +37,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DEBOUNCE 5
 
 /* disable these deprecated features by default */
-#define NO_ACTION_MACRO
-#define NO_ACTION_FUNCTION
+//#define NO_ACTION_MACRO
+//#define NO_ACTION_FUNCTION
