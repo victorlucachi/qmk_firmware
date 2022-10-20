@@ -22,5 +22,5 @@
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
 #define DEBOUNCE 5
 
-#define ENCODERS_PAD_A { B1, F7 }
-#define ENCODERS_PAD_B { B2, B3 }
+#define ENCODERS_PAD_A { B1, B2 }
+#define ENCODERS_PAD_B { F7, B3 }
