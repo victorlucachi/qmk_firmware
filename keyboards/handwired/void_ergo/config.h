@@ -1,41 +1,31 @@
-/*
-Copyright 2020 Victor Lucachi
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
-*/
+// Copyright 2022 Victor Lucachi (@Victor Lucachi)
+// SPDX-License-Identifier: GPL-2.0-or-later
 
 #pragma once
 
-#include "config_common.h"
+/*
+ * Feature disable options
+ *  These options are also useful to firmware size reduction.
+ */
 
-/* USB Device descriptor parameter */
-#define VENDOR_ID 0xF055
-#define PRODUCT_ID 0x3535
-#define DEVICE_VER 0x0001
-#define MANUFACTURER Victor Lucachi
-#define DESCRIPTION A handwired split keyboard inspired by the Corne
+/* disable debug print */
+//#define NO_DEBUG
 
-/* key matrix size */
-#define MATRIX_ROWS 8
-#define MATRIX_COLS 12
+/* disable print */
+//#define NO_PRINT
 
-/* COL2ROW, ROW2COL*/
-#define DIODE_DIRECTION COL2ROW
+/* disable action features */
+//#define NO_ACTION_LAYER
+//#define NO_ACTION_TAPPING
+//#define NO_ACTION_ONESHOT
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
 #define DEBOUNCE 5
 
-/* disable these deprecated features by default */
-#define NO_ACTION_MACRO
-#define NO_ACTION_FUNCTION
+#define ENCODERS_PAD_A { F5 }
+#define ENCODERS_PAD_B { F6 }
+
+#define ENCODERS_PAD_A_RIGHT { F6 }
+#define ENCODERS_PAD_B_RIGHT { F5 }
+
+#define SPLIT_USB_DETECT
