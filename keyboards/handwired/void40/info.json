@@ -19,6 +19,10 @@
         "pid": "0x3531",
         "vid": "0xF055"
     },
+    "matrix": {
+        "rows": 4,
+        "cols": 12
+    },
     "layouts": {
         "LAYOUT_ortho_4x12": {
             "layout": [
