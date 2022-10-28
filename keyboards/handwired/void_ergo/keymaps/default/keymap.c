@@ -1,3 +1,6 @@
+// Copyright 2022 Victor Lucachi (@victorlucachi)
+// SPDX-License-Identifier: GPL-2.0-or-later
+
 #include QMK_KEYBOARD_H
 
 // Defines names for use in layer keycodes and the keymap
