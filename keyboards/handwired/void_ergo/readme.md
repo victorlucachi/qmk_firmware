@@ -2,7 +2,7 @@
 
 ![void_ergo](https://i.imgur.com/aQ571vc.jpg)
 
-A short description of the keyboard/project
+A 3d printed, handwired, split keyboard with a layout similar to the Iris/Corne/Kyria.
 
 * Keyboard Maintainer: [Victor Lucachi](https://github.com/victorlucachi)
 * Hardware Supported: Pro Micro
