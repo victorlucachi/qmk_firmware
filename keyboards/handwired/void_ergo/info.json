@@ -1,6 +1,6 @@
 {
     "manufacturer": "VOID",
-    "keyboard_name": "ERGO S",
+    "keyboard_name": "Ergo S",
     "maintainer": "victorlucachi",
     "bootloader": "caterina",
     "diode_direction": "COL2ROW",
@@ -21,7 +21,7 @@
         "soft_serial_pin": "D1"
     },
     "processor": "atmega32u4",
-    "url": "",
+    "url": "https://github.com/victorlucachi/void_ergo",
     "usb": {
         "device_version": "1.0.0",
         "pid": "0x3535",
