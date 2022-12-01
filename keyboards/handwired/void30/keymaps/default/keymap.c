@@ -9,8 +9,7 @@ enum layer_names {
     _FN1,
     _FN2,
     _FN3,
-    _FN4,
-    _ADJUST
+    _FN4
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -88,24 +87,5 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_UNDS,    KC_PLUS,    KC_LCBR,    KC_RCBR,    KC_PIPE,
     KC_TAB,     KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_LABK,    KC_RABK,    KC_QUES,    KC_COLN,    KC_DQUO,
     KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_HOME,    KC_PGDN,    KC_PGUP,    KC_END
-),
-
-/* ADJUST
- * ,---------------------------------------------------------------------.
- * | RESET|      |      |      |      |      |      |      |      | PSCR |
- * |------+------+------+------+------+------+------+------+------+------|
- * |      |      |      |      |      |      |      |      |      |      |
- * |------+------+------+------+------+------+------+------+------+------|
- * |      |      |      |      |      |      |      |      |      |      |
- * `---------------------------------------------------------------------'
- */
-[_ADJUST] = LAYOUT_ortho_3x10(
-    RESET,      KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_PSCR,
-    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,
-    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS
 )
 };
-
-layer_state_t layer_state_set_user(layer_state_t state) {
-    return update_tri_layer_state(state, _FN2, _FN1, _ADJUST);
-}
