@@ -27,10 +27,6 @@
         "pid": "0x3535",
         "vid": "0xF055"
     },
-    "matrix": {
-        "rows": 8,
-        "cols": 6
-    },
     "layouts": {
         "LAYOUT_split_3x6_5": {
             "layout": [
