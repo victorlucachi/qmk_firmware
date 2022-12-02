@@ -23,10 +23,6 @@
         "pid": "0x3533",
         "vid": "0xF055"
     },
-    "matrix": {
-        "rows": 4,
-        "cols": 4
-    },
     "layouts": {
         "LAYOUT_ortho_4x4": {
             "layout": [
